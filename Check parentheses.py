@@ -11,11 +11,11 @@ def check(string):
             if len(stack) > 0 and (open_list[close_index] == stack[len(stack)-1]):
                 stack.pop()
             else:
-                return "Unbalance"
+                return "Invalid"
     if len(stack) == 0:
-        return "Balance"
+        return "Valid"
     else:
-        return "Unbalance"
+        return "Invalid"
 
 first = '({([])}{[}])'
 print(check(first))
